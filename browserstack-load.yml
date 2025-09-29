@@ -24,11 +24,14 @@ testType: Playwright
 
 # Set 'vus' to the maximum number of virtual users to simulate during the test.  
 vus: 10
+#duration: 5m
 
 # Set multiple regions from which you would want to generate the load (percent should total 100 across all loadzones). 
 regions:
   - loadzone: us-east-1
-    percent: 100 
+    percent: 50
+  - loadzone: us-west-1
+    percent: 50
 
 # Set language to the programming language used in your project. Example: 'java', 'nodejs'.
 language: nodejs
